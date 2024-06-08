@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using ShopManagement.Core.Contracts.Commands.ProductCategoryAgg;
 using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
+using ShopManagement.Core.Domain.ProductCategoryAgg.Entities;
 
 namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Commands
 {
@@ -14,13 +15,17 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Commands
 
         public async Task<CreateProductCategoryResult> Handle(CreateProductCategory request, CancellationToken cancellationToken)
         {
-            var result = _repository.Command(request);
-
-            var response= new CreateProductCategoryResult
+            var productCategory = new ProductCategory(request.Name, request.Description,
+                request.Picture, request.PictureAlt, request.PictureTitle, request.Keywords,
+                request.MetaDescription, request.Slug);
+            await _repository.Command(productCategory);
+            var result =  new CreateProductCategoryResult
             {
-                ProductCategoryId = request.Id
+                ProductCategoryId = productCategory.Id
             };
-            return response;
+
+
+            return  result;
 
         }
     }

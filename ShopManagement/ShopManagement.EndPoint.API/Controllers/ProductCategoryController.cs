@@ -18,8 +18,7 @@ namespace ShopManagement.EndPoint.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(CreateProductCategory create)
         {
-             var res=await _mediator.Send(create);
-            return Ok();
+            return Ok(await _mediator.Send(create));
         }
 
         //[HttpGet("GetDetails")]

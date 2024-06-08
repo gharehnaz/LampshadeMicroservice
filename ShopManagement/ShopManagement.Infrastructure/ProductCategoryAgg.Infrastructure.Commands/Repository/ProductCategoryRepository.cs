@@ -1,7 +1,8 @@
 ﻿using ShopManagement.Core.Contracts.Commands.ProductCategoryAgg;
 using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
+using ShopManagement.Core.Domain.ProductCategoryAgg.Entities;
 
-namespace ProductCategoryAgg.Infrastructure.Commands
+namespace ProductCategoryAgg.Infrastructure.Commands.Repository
 {
     public class ProductCategoryCommandRepository : IProductCategoryCommandRepository
     {
@@ -10,12 +11,13 @@ namespace ProductCategoryAgg.Infrastructure.Commands
         {
             _context = context;
         }
-        public async Task<long> Command(CreateProductCategory createProductCategory)
+        public async Task<long> Command(ProductCategory productCategory)
         {
-            var res=await _context.ProductCategories.Add(createProductCategory.Id,);
-            _context.SaveChangesAsync();
-            return createProductCategory.Id;
-         
+            await _context.AddAsync(productCategory);
+
+            await _context.SaveChangesAsync();
+            return productCategory.Id;
+
         }
     }
 }

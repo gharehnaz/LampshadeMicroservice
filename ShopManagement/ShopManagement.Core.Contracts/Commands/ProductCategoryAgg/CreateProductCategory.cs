@@ -4,7 +4,6 @@ namespace ShopManagement.Core.Contracts.Commands.ProductCategoryAgg
 {
     public class CreateProductCategory : IRequest<CreateProductCategoryResult>
     {
-        public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Picture { get; set; }

@@ -1,9 +1,9 @@
-﻿using ShopManagement.Core.Contracts.Commands.ProductCategoryAgg;
+﻿using ShopManagement.Core.Domain.ProductCategoryAgg.Entities;
 
 namespace ShopManagement.Core.Contracts.IRepositories.IProductCategory
 {
     public interface IProductCategoryCommandRepository
     {
-       Task<long> Command(CreateProductCategory createProductCategory);
+       Task<long> Command(ProductCategory ProductCategory);
     }
 }
