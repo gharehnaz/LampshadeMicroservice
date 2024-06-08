@@ -21,11 +21,11 @@ namespace ShopManagement.EndPoint.API.Controllers
             return Ok(await _mediator.Send(create));
         }
 
-        //[HttpGet("GetDetails")]
-        //public async Task<IActionResult> Get([FromQuery] GetDetails details)
-        //{
-        //    return await Query<GetDetails, GetDetailsResult>(details);
-        //}
+        [HttpGet("GetDetails")]
+        public async Task<IActionResult> Get([FromQuery] GetDetails details)
+        {
+            return Ok(await _mediator.Send(details));
+        }
 
         //[HttpGet("ProductCategories")]
         //public async Task<IActionResult> Get([FromQuery] GetProductCategories getProductCategories)

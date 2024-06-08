@@ -4,10 +4,10 @@ using ShopManagement.Core.Contracts.Queries.ProductCategoryAgg;
 
 namespace ProductCategoryAgg.Infrastructure.Queries
 {
-    public class ProductCategoryRepository: IProductCategoryQueryRepository
+    public class ProductCategoryQueryRepository : IProductCategoryQueryRepository
     {
         private readonly ProductCategoryQueryDbContext _context;
-        public ProductCategoryRepository(ProductCategoryQueryDbContext context) 
+        public ProductCategoryQueryRepository(ProductCategoryQueryDbContext context) 
         {
             _context = context;
         }
@@ -17,18 +17,19 @@ namespace ProductCategoryAgg.Infrastructure.Queries
 
         public GetDetailsResult Query(GetDetails getDetails)
         {
-            return _context.ProductCategories.Select(x => new GetDetailsResult()
+            var result= _context.ProductCategories.Select(x => new GetDetailsResult()
             {
                 Id = x.Id,
                 Description = x.Description,
                 Name = x.Name,
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
-                //Picture = x.Picture,
+                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
             }).FirstOrDefault(x => x.Id == getDetails.Id);
+            return result;
         }
 
         public List<GetProductCategoriesResult> Query(GetProductCategories getProductCategories)
