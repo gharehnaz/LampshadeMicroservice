@@ -15,7 +15,7 @@ namespace ProductCategoryAgg.Infrastructure.Queries
 
         
 
-        public  GetDetailsResult Query(GetDetails getDetails)
+        public async  Task<GetDetailsResult> Query(GetDetails getDetails)
         {
             var result=  _context.ProductCategories.Select(x => new GetDetailsResult()
             {

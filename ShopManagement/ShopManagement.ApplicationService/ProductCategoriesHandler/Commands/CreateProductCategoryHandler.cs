@@ -25,7 +25,7 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Commands
             };
 
 
-            return  result;
+            return result;
 
         }
     }

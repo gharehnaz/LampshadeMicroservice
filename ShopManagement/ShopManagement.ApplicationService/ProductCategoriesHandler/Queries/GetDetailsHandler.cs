@@ -17,10 +17,8 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Queries
         }
         public async Task<GetDetailsResult> Handle(GetDetails request, CancellationToken cancellationToken)
         {
-            var query =  _repository.Query(request);
-            var result =  _mapper.Map<GetDetailsResult>(query);
-
-            return   result;
+            var query =await  _repository.Query(request);
+            return query;
         }
     }
 }
