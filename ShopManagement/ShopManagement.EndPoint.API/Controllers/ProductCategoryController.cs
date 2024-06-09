@@ -27,16 +27,16 @@ namespace ShopManagement.EndPoint.API.Controllers
             return Ok(await _mediator.Send(details));
         }
 
-        //[HttpGet("ProductCategories")]
-        //public async Task<IActionResult> Get([FromQuery] GetProductCategories getProductCategories)
-        //{
-        //    return await Query<GetProductCategories, PagedData<GetProductCategoriesResult>>(getProductCategories);
-        //}
+        [HttpGet("ProductCategories")]
+        public async Task<IActionResult> Get([FromQuery] GetProductCategories getProductCategories)
+        {
+            return Ok(await _mediator.Send(getProductCategories));
+        }
 
-        //[HttpGet("Search")]
-        //public async Task<IActionResult> Search([FromQuery] ProductCategorySearch productCategorySearch)
-        //{
-        //    return await Query<ProductCategorySearch, PagedData<ProductCategorySearchResult>>(productCategorySearch);
-        //}
+        [HttpGet("Search")]
+        public async Task<IActionResult> Search([FromQuery] ProductCategorySearch productCategorySearch)
+        {
+            return Ok(await _mediator.Send(productCategorySearch));
+        }
     }
 }

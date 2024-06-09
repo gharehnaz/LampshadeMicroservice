@@ -8,7 +8,6 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler
         public AutoMapperConfigs()
         {
             CreateMap<GetDetailsResult, GetDetails>();
-
         }
 
     }

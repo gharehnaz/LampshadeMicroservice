@@ -15,9 +15,9 @@ namespace ProductCategoryAgg.Infrastructure.Queries
 
         
 
-        public GetDetailsResult Query(GetDetails getDetails)
+        public  GetDetailsResult Query(GetDetails getDetails)
         {
-            var result= _context.ProductCategories.Select(x => new GetDetailsResult()
+            var result=  _context.ProductCategories.Select(x => new GetDetailsResult()
             {
                 Id = x.Id,
                 Description = x.Description,
@@ -29,19 +29,20 @@ namespace ProductCategoryAgg.Infrastructure.Queries
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
             }).FirstOrDefault(x => x.Id == getDetails.Id);
-            return result;
+            return  result;
         }
 
-        public List<GetProductCategoriesResult> Query(GetProductCategories getProductCategories)
+        public async Task<List<GetProductCategoriesResult>> Query(GetProductCategories getProductCategories)
         {
-            return _context.ProductCategories.Select(x => new GetProductCategoriesResult
+            var result = _context.ProductCategories.Select(x => new GetProductCategoriesResult
             {
                 Id = x.Id,
                 Name = x.Name
             }).ToList();
+            return result;
         }
 
-        public List<ProductCategorySearchResult> Query(ProductCategorySearch searchModel)
+        public async Task<List<ProductCategorySearchResult>> Query(ProductCategorySearch searchModel)
         {
             var query = _context.ProductCategories.Select(x => new ProductCategorySearchResult
             {
@@ -54,6 +55,7 @@ namespace ProductCategoryAgg.Infrastructure.Queries
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
 
             return query.OrderByDescending(x => x.Id).ToList();
+
         }
 
     }

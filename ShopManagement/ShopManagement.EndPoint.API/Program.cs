@@ -6,7 +6,6 @@ using ShopManagement.ApplicationService.ProductCategoriesHandler;
 using ShopManagement.ApplicationService.ProductCategoriesHandler.Commands;
 using ShopManagement.ApplicationService.ProductCategoriesHandler.Queries;
 using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
-using System.Reflection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +28,9 @@ builder.Services.AddMediatR(cfg =>
 {
 cfg.RegisterServicesFromAssembly(typeof(CreateProductCategoryHandler).Assembly);
 cfg.RegisterServicesFromAssembly(typeof(GetDetailsHandler).Assembly);
+cfg.RegisterServicesFromAssembly(typeof(GetProductCategoriesHandler).Assembly);
+cfg.RegisterServicesFromAssembly(typeof(ProductCategorySearchHandler).Assembly);
+
 
 });
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly));
