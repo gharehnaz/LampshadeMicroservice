@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopManagement.Core.Contracts.Queries.OrderAgg
 {
-    public class GetOrderItem:IRequest<GetOrderItemResult>
+    public class GetOrderItem:IRequest<List<GetOrderItemResult>>
     {
         public long OrderId { get; set; }
     }

@@ -8,12 +8,10 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Queries
     public class GetProductCategoriesHandler : IRequestHandler<GetProductCategories, List<GetProductCategoriesResult>>
     {
         private readonly IProductCategoryQueryRepository _repository;
-        private readonly IMapper _mapper;
 
-        public GetProductCategoriesHandler(IProductCategoryQueryRepository repository, IMapper mapper)
+        public GetProductCategoriesHandler(IProductCategoryQueryRepository repository)
         {
             _repository = repository;
-            _mapper = mapper;
         }
 
         public async Task<List<GetProductCategoriesResult>> Handle(GetProductCategories request, CancellationToken cancellationToken)

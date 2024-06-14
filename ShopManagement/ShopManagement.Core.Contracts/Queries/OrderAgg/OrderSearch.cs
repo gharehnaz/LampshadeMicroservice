@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopManagement.Core.Contracts.Queries.OrderAgg
 {
-    public class OrderSearch:IRequest<OrderSearchResult>
+    public class OrderSearch:IRequest<List<OrderSearchResult>>
     {
         public long AccountId { get; set; }
         public bool IsCanceled { get; set; }

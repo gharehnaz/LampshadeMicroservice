@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using MediatR;
+﻿using MediatR;
 using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
 using ShopManagement.Core.Contracts.Queries.ProductCategoryAgg;
 
@@ -8,12 +7,10 @@ namespace ShopManagement.ApplicationService.ProductCategoriesHandler.Queries
     public class GetDetailsHandler : IRequestHandler<GetDetails, GetDetailsResult>
     {
         private readonly IProductCategoryQueryRepository _repository;
-        private readonly IMapper _mapper;
 
-        public GetDetailsHandler(IProductCategoryQueryRepository repository, IMapper mapper)
+        public GetDetailsHandler(IProductCategoryQueryRepository repository)
         {
             _repository = repository;
-            _mapper = mapper;
         }
         public async Task<GetDetailsResult> Handle(GetDetails request, CancellationToken cancellationToken)
         {

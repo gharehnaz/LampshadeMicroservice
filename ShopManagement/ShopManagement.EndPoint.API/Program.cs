@@ -43,13 +43,6 @@ builder.Services.AddScoped<IProductCategoryQueryRepository, ProductCategoryQuery
 builder.Services.AddScoped<IProductCategoryCommandRepository, ProductCategoryCommandRepository>();
 
 
-var config = new AutoMapper.MapperConfiguration(cfg =>
-{
-    cfg.AddProfile(new AutoMapperConfigs());
-});
-var mapper = config.CreateMapper();
-builder.Services.AddSingleton(mapper);
-
 
 var app = builder.Build();
 

@@ -2,6 +2,6 @@
 {
     public interface IDomainEventHandler<TDomainEvent> where TDomainEvent : IDomainEvent
     {
-        Task Hanlde(TDomainEvent domainEvent);
+        Task Handle(TDomainEvent domainEvent);
     }
 }

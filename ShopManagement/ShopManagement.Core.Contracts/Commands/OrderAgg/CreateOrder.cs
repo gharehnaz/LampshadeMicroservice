@@ -1,6 +1,8 @@
-﻿namespace ShopManagement.Core.Contracts.Commands.OrderAgg
+﻿using MediatR;
+
+namespace ShopManagement.Core.Contracts.Commands.OrderAgg
 {
-    public class CreateOrder
+    public class CreateOrder:IRequest<CreateOrderResult>
     {
         public long AccountId { get; set; }
         public int PaymentMethod { get; set; }
@@ -22,5 +24,9 @@
         public double UnitPrice { get; set; }
         public int DiscountRate { get; set; }
         public long OrderId { get; set; }
+    }
+    public class CreateOrderResult
+    {
+        public long Id { get; set; }
     }
 }
