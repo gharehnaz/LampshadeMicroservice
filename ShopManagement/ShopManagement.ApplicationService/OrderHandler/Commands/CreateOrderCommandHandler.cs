@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopManagement.ApplicationService.OrderHandler.Commands
+﻿namespace ShopManagement.ApplicationService.OrderHandler.Commands
 {
-    internal class CreateOrderCommandHandler
+    public class CreateOrderCommandHandler
     {
     }
 }
