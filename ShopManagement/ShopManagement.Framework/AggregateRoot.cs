@@ -9,8 +9,8 @@ namespace ShopManagement.Framework
 {
     public class AggregateRoot : Entity
     {
-        private readonly List<IDomainEvent> _events = new List<IDomainEvent>();
-        public int Version { get; private set; }
+         readonly List<IDomainEvent> _events = new List<IDomainEvent>();
+        public int Version { get;  set; }
         public IReadOnlyList<IDomainEvent> Events => _events;
 
 
@@ -37,7 +37,7 @@ namespace ShopManagement.Framework
             AddEvent(@event);
         }
 
-        private void Mutate(IDomainEvent @event)
+         void Mutate(IDomainEvent @event)
         {
             var onMethod = this.GetType().GetMethod("On", BindingFlags.Instance | BindingFlags.NonPublic, [@event.GetType()]);
             var res = onMethod.Invoke(this, new[] { @event });
