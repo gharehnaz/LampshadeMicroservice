@@ -1,10 +1,8 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using MediatR;
 
 namespace ShopManagement.Core.Contracts.Commands.ProductPictureAgg
 {
-    public class CreateProductPicture
+    public class CreateProductPicture:IRequest<CreateProductPictureResult>
     {
         public long ProductId { get; set; }
         public string Picture { get; set; }
@@ -21,5 +19,9 @@ namespace ShopManagement.Core.Contracts.Commands.ProductPictureAgg
         public string Category { get; set; }
         public long CategoryId { get; set; }
         public string CreationDate { get; set; }
+    }
+    public class CreateProductPictureResult 
+    {
+        public long Id { get; set; }
     }
 }

@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MediatR;
+using System.ComponentModel.DataAnnotations;
 
 namespace ShopManagement.Core.Contracts.Commands.ProductAgg
 {
-    public class CreateProduct
+    public class CreateProduct:IRequest<CreateProductResult>
     {
         public string Name { get; set; }
         public string Code { get; set; }
@@ -25,4 +26,9 @@ namespace ShopManagement.Core.Contracts.Commands.ProductAgg
         public string CreationDate { get; set; }
         public long ProductsCount { get; set; }
     }
+    public class CreateProductResult
+    {
+        public long Id { get; set; }
+    }
+
 }

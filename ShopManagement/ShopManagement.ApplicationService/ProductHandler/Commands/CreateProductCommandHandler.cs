@@ -1,12 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
+using ShopManagement.Core.Contracts.Commands.OrderAgg;
+using ShopManagement.Core.Contracts.Commands.ProductAgg;
+using ShopManagement.Core.Contracts.IRepositories.IProduct;
+using ShopManagement.Core.Domain.OrderAgg.Entities;
+using ShopManagement.Core.Domain.ProductAgg.Entities;
+using System.Xml.Linq;
 
 namespace ShopManagement.ApplicationService.ProductHandler.Commands
 {
-    internal class CreateProductCommandHandler
+    public class CreateProductCommandHandler : IRequestHandler<CreateProduct, CreateProductResult>
     {
+        private readonly IProductCommandRepository _repository;
+        public CreateProductCommandHandler(IProductCommandRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public async Task<CreateProductResult> Handle(CreateProduct request, CancellationToken cancellationToken)
+        {
+            var product = new Product(request.Name, request.Code, request.ShortDescription, request.Description,
+            request.Picture, request.PictureAlt, request.PictureTitle, request.CategoryId, request.Slug,
+            request.Keywords, request.MetaDescription);
+            await _repository.Command(product);
+            var result = new CreateProductResult
+            {
+                Id = product.Id
+            };
+
+
+            return result;
+        }
     }
+
 }

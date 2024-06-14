@@ -2,7 +2,7 @@
 
 namespace ShopManagement.Core.Contracts.Queries.ProductAgg
 {
-    public class ProductSearch:IRequest<ProductSearch>
+    public class ProductSearch:IRequest<List<ProductSearchResult>>
     {
         public string Name { get; set; }
         public string Code { get; set; }
