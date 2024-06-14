@@ -2,7 +2,7 @@
 {
     public interface ISlideQueryRepository
     {
-        Task<GetSlideResult> Query(GetSlide getSlide);
+        Task<GetSlideDetailsResult> Query(GetSlideDetails getSlideDetails);
         Task<List<GetSlidesResult>> Query(GetSlides getSlides);
     }
 }

@@ -15,9 +15,4 @@
     <ProjectReference Include="..\ShopManagement.Core.Domain\ShopManagement.Core.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Queries\ProductPictureAgg\" />
-    <Folder Include="Queries\SlideAgg\" />
-  </ItemGroup>
-
 </Project>

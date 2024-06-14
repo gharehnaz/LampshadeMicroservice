@@ -4,7 +4,7 @@ namespace ShopManagement.Core.Contracts.IRepositories.IProductPicture
 {
     public interface IProductPictureQueryRepository
     {
-        Task<GetProductPictureResult> Query(GetProductPicture getProductPicture);
+        Task<GetProductPictureDetailsResult> Query(GetProductPictureDetails getProductPictureDetails);
         Task<GetWithProductAndCategoryResult> Query(GetWithProductAndCategory getWithProductAndCategory);
         Task<List<ProductPictureSearchResult>> Query(ProductPictureSearch searchModel);
     }
