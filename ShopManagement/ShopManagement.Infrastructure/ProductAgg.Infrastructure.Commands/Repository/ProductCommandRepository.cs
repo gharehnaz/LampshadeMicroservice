@@ -13,7 +13,7 @@ namespace ProductAgg.Infrastructure.Commands.Repository
         }
         public async Task<long> Command(Product product)
         {
-            await _context.AddAsync(Product);
+            await _context.AddAsync(product);
 
             await _context.SaveChangesAsync();
             return product.Id;
