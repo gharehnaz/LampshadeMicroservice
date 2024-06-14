@@ -1,6 +1,8 @@
-﻿namespace ShopManagement.Core.Domain.ProductCategoryAgg.Entities
+﻿using ShopManagement.Framework;
+
+namespace ShopManagement.Core.Domain.ProductCategoryAgg.Entities
 {
-    public class ProductCategory
+    public class ProductCategory:AggregateRoot
     {
         
             public long Id { get; set; }
