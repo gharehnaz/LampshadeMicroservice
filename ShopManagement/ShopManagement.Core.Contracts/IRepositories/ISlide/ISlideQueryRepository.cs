@@ -1,4 +1,6 @@
-﻿namespace ShopManagement.Core.Contracts.IRepositories.ISlide
+﻿using ShopManagement.Core.Contracts.Queries.SlideAgg;
+
+namespace ShopManagement.Core.Contracts.IRepositories.ISlide
 {
     public interface ISlideQueryRepository
     {
