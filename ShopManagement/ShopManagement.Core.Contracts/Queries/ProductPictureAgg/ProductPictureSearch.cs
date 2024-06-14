@@ -2,7 +2,7 @@
 
 namespace ShopManagement.Core.Contracts.Queries.ProductPictureAgg
 {
-    public class ProductPictureSearch:IRequest<ProductPictureSearchResult>
+    public class ProductPictureSearch:IRequest<List<ProductPictureSearchResult>>
     {
         public long ProductId { get; set; }
 
