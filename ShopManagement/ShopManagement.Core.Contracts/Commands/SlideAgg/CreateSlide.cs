@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopManagement.Core.Contracts.Commands.SlideAgg
 {
-    public class CreateSlide
+    public class CreateSlide:IRequest<CreateSlideResult>
     {
         public string Picture { get; set; }
         public string PictureAlt { get; set; }
@@ -17,5 +18,9 @@ namespace ShopManagement.Core.Contracts.Commands.SlideAgg
         public string Text { get; set; }
         public string BtnText { get; set; }
         public string Link { get; set; }
+    }
+    public class CreateSlideResult
+    {
+        public long Id { get; set; }
     }
 }

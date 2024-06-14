@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopManagement.Core.Contracts.Queries.SlideAgg
 {
-    public class GetSlides:IRequest<GetSlidesResult>
+    public class GetSlides:IRequest<List<GetSlidesResult>>
     {
     }
     public class GetSlidesResult

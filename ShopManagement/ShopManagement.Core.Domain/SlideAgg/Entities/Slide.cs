@@ -1,6 +1,8 @@
-﻿namespace ShopManagement.Core.Domain.SlideAgg.Entities
+﻿using ShopManagement.Framework;
+
+namespace ShopManagement.Core.Domain.SlideAgg.Entities
 {
-    public class Slide
+    public class Slide:AggregateRoot
     {
         public string Picture { get;  set; }
         public string PictureAlt { get;  set; }
