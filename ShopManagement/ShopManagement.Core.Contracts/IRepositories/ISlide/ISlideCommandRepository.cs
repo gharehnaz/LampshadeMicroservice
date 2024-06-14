@@ -4,7 +4,7 @@ namespace ShopManagement.Core.Contracts.IRepositories.ISlide
 {
     public interface ISlideCommandRepository
     {
-        Task<long> Command(Slide ProductCategory);
+        Task<long> Command(Slide slide);
 
     }
 }

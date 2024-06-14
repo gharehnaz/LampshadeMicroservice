@@ -4,7 +4,7 @@ namespace ShopManagement.Core.Contracts.IRepositories.IProductPicture
 {
     public interface IProductPictureCommandRepository
     {
-        Task<long> Command(ProductPicture ProductCategory);
+        Task<long> Command(ProductPicture productPicture);
 
     }
 }

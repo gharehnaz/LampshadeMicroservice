@@ -1,4 +1,4 @@
-﻿namespace Slide.Infrastructure.Queries
+﻿namespace SlideAgg.Infrastructure.Queries
 {
     public class SlideQueryDbContext
     {

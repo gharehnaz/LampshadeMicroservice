@@ -1,4 +1,4 @@
-﻿namespace Slide.Infrastructure.Commands
+﻿namespace SlideAgg.Infrastructure.Commands
 {
     public class SlideCommandDbContext
     {
