@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\SlideAgg\" />
-    <Folder Include="Commands\ProductPictureAgg\" />
     <Folder Include="Queries\ProductPictureAgg\" />
     <Folder Include="Queries\SlideAgg\" />
   </ItemGroup>
