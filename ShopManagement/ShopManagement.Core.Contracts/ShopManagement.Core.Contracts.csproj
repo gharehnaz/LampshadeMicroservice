@@ -18,10 +18,8 @@
   <ItemGroup>
     <Folder Include="Commands\SlideAgg\" />
     <Folder Include="Commands\ProductPictureAgg\" />
-    <Folder Include="Commands\ProductAgg\" />
     <Folder Include="Queries\ProductPictureAgg\" />
     <Folder Include="Queries\SlideAgg\" />
-    <Folder Include="Queries\ProductAgg\" />
   </ItemGroup>
 
 </Project>
