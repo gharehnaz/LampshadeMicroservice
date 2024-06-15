@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
+﻿using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
 using ShopManagement.Core.Contracts.Queries.ProductCategoryAgg;
 
 namespace ProductCategoryAgg.Infrastructure.Queries
@@ -15,7 +14,7 @@ namespace ProductCategoryAgg.Infrastructure.Queries
 
         
 
-        public async  Task<GetDetailsResult> Query(GetDetails getDetails)
+        public async Task<GetDetailsResult> Query(GetDetails getDetails)
         {
             var result=  _context.ProductCategories.Select(x => new GetDetailsResult()
             {

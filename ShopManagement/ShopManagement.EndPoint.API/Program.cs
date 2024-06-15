@@ -30,6 +30,7 @@ cfg.RegisterServicesFromAssembly(typeof(CreateProductCategoryHandler).Assembly);
 cfg.RegisterServicesFromAssembly(typeof(GetDetailsHandler).Assembly);
 cfg.RegisterServicesFromAssembly(typeof(GetProductCategoriesHandler).Assembly);
 cfg.RegisterServicesFromAssembly(typeof(ProductCategorySearchHandler).Assembly);
+//cfg.RegisterServicesFromAssemblies(typeof(ProductCategorySearchHandler).Assembly);
 
 
 });
