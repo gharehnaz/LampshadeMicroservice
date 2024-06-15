@@ -13,7 +13,7 @@
         public string Slug { get; set; }
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
-        public ProductCategory Category { get; private set; }
+        public ProductCategory Category { get;  set; }
 
     }
 }
