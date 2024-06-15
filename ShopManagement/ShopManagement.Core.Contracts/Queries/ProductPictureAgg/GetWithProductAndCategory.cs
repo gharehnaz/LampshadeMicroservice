@@ -14,11 +14,12 @@ namespace ShopManagement.Core.Contracts.Queries.ProductPictureAgg
     }
     public class GetWithProductAndCategoryResult
     {
-        public long ProductId { get; private set; }
-        public string Picture { get; private set; }
-        public string PictureAlt { get; private set; }
-        public string PictureTitle { get; private set; }
-        public bool IsRemoved { get; private set; }
-        public Product Product { get; private set; }
+        public long ProductId { get;  set; }
+        public string Picture { get;  set; }
+        public string PictureAlt { get;  set; }
+        public string PictureTitle { get;  set; }
+        public bool IsRemoved { get;  set; }
+        public Product Product { get;  set; }
+        public long Id { get; set; }
     }
 }
