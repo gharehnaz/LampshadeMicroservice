@@ -13,5 +13,8 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\ShopManagement.Core.Contracts\ShopManagement.Core.Contracts.csproj" />
+	</ItemGroup>
 
 </Project>
