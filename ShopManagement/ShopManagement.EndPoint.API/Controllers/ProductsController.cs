@@ -1,8 +1,6 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopManagement.Core.Contracts.Commands.ProductAgg;
-using ShopManagement.Core.Contracts.Commands.ProductPictureAgg;
 using ShopManagement.Core.Contracts.Queries.ProductAgg;
 
 namespace ShopManagement.EndPoint.API.Controllers

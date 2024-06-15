@@ -1,10 +1,7 @@
 ﻿using MediatR;
-using ShopManagement.Core.Contracts.Commands.OrderAgg;
 using ShopManagement.Core.Contracts.Commands.ProductAgg;
 using ShopManagement.Core.Contracts.IRepositories.IProduct;
-using ShopManagement.Core.Domain.OrderAgg.Entities;
 using ShopManagement.Core.Domain.ProductAgg.Entities;
-using System.Xml.Linq;
 
 namespace ShopManagement.ApplicationService.ProductHandler.Commands
 {
