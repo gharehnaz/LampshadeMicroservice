@@ -5,11 +5,12 @@ namespace OrderAgg.Infrastructure.Commands
 {
     public class OrderCommandDbContext : DbContext
     {
+        public DbSet<Order> Orders { get; set; }
+
         public OrderCommandDbContext(DbContextOptions<OrderCommandDbContext> options) : base(options)
         {
 
         }
-        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

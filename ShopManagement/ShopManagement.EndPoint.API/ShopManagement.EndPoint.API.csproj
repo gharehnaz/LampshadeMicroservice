@@ -26,8 +26,16 @@
   <ItemGroup>
     <ProjectReference Include="..\ShopManagement.ApplicationService\ShopManagement.ApplicationService.csproj" />
     <ProjectReference Include="..\ShopManagement.Core.Contracts\ShopManagement.Core.Contracts.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\OrderAgg.Infrastructure.Commands\OrderAgg.Infrastructure.Commands.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\OrderAgg.Infrastructure.Queries\OrderAgg.Infrastructure.Queries.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\ProductAgg.Infrastructure.Commands\ProductAgg.Infrastructure.Commands.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\ProductAgg.Infrastructure.Queries\ProductAgg.Infrastructure.Queries.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure\ProductCategoryAgg.Infrastructure.Commands\ProductCategoryAgg.Infrastructure.Commands.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure\ProductCategoryAgg.Infrastructure.Queries\ProductCategoryAgg.Infrastructure.Queries.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\ProductPictureAgg.Infrastructure.Commands\ProductPictureAgg.Infrastructure.Commands.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\ProductPictureAgg.Infrastructure.Queries\ProductPictureAgg.Infrastructure.Queries.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\SlideAgg.Infrastructure.Commands\SlideAgg.Infrastructure.Commands.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure\SlideAgg.Infrastructure.Queries\SlideAgg.Infrastructure.Queries.csproj" />
   </ItemGroup>
 
 </Project>

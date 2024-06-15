@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using MediatR;
+﻿using MediatR;
 using ShopManagement.Core.Contracts.IRepositories.IProductCategory;
 using ShopManagement.Core.Contracts.Queries.ProductCategoryAgg;
 

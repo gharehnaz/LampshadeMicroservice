@@ -4,6 +4,7 @@ namespace ShopManagement.Core.Domain.OrderAgg.Entities
 {
     public class Order:AggregateRoot
     {
+        public long Id { get; set; }
         public long AccountId { get;  set; }
         public int PaymentMethod { get;  set; }
         public double TotalAmount { get;  set; }
