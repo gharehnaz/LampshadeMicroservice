@@ -10,6 +10,7 @@ namespace ShopManagement.Core.Contracts.Queries.ProductAgg
     }
     public class GetProductWithCategoryResult
     {
+        public long Id { get; set; }
         public string Name { get;  set; }
         public string Code { get;  set; }
         public string ShortDescription { get;  set; }
