@@ -1,0 +1,6 @@
+@CommentManagement.EndPoint.API_HostAddress = http://localhost:5207
+
+GET {{CommentManagement.EndPoint.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
