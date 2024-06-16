@@ -1,9 +1,6 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShopManagement.Core.Contracts.Commands.OrderAgg;
 using ShopManagement.Core.Contracts.Commands.ProductPictureAgg;
-using ShopManagement.Core.Contracts.Queries.OrderAgg;
 using ShopManagement.Core.Contracts.Queries.ProductAgg;
 using ShopManagement.Core.Contracts.Queries.ProductPictureAgg;
 

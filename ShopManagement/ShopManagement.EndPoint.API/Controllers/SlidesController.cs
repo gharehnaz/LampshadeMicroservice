@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ShopManagement.Core.Contracts.Commands.SlideAgg;
-using ShopManagement.Core.Contracts.Queries.ProductAgg;
 using ShopManagement.Core.Contracts.Queries.SlideAgg;
 
 namespace ShopManagement.EndPoint.API.Controllers

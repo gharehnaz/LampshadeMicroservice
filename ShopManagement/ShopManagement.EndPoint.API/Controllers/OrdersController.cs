@@ -1,10 +1,7 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopManagement.Core.Contracts.Commands.OrderAgg;
-using ShopManagement.Core.Contracts.Commands.ProductCategoryAgg;
 using ShopManagement.Core.Contracts.Queries.OrderAgg;
-using ShopManagement.Core.Contracts.Queries.ProductCategoryAgg;
 
 namespace ShopManagement.EndPoint.API.Controllers
 {
