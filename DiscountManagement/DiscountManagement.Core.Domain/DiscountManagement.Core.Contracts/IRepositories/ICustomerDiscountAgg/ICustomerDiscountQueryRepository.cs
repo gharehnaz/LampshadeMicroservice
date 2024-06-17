@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiscountManagement.Core.Contracts.IRepositories.IDiscount
+namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
 {
-    internal interface IDiscountCommandRepository
+    internal interface ICustomerDiscountQueryRepository
     {
     }
 }

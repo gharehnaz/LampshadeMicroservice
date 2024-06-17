@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CommentManagement.Core.Domain.IRepositories.IComment
+﻿namespace CommentManagement.Core.Domain.IRepositories.IComment
 {
-    internal interface ICommentCommandRepository
+    public interface ICommentCommandRepository
     {
     }
 }

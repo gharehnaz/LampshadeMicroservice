@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogManagement.Core.Contracts.IRepositories
+namespace DiscountManagement.Core.Contracts.IRepositories.IColleagueDiscountAgg
 {
-    internal interface IBlogCommandRepository
+    internal interface IColleagueDiscountQuery
     {
     }
 }

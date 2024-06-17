@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\BlogAgg\" />
-    <Folder Include="Queries\BlogAgg\" />
+    <Folder Include="Commands\ArticleAgg\" />
+    <Folder Include="Commands\ArticleCategoryAgg\" />
+    <Folder Include="Queries\ArticleAgg\" />
+    <Folder Include="Queries\ArticleCategoryAgg\" />
   </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="FluentValidation" Version="11.9.1" />
 		<PackageReference Include="MediatR" Version="12.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BlogManagement.Core.Domain\BlogManagement.Core.Domain.csproj" />
 	</ItemGroup>
 </Project>
