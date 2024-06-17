@@ -7,9 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="IRepositories\" />
-    <Folder Include="Queries\" />
+    <Folder Include="Commands\BlogAgg\" />
+    <Folder Include="Queries\BlogAgg\" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.9.1" />
+		<PackageReference Include="MediatR" Version="12.2.0" />
+	</ItemGroup>
 </Project>
