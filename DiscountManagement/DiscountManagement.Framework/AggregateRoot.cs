@@ -2,7 +2,7 @@
 
 namespace DiscountManagement.Framework
 {
-    public class AggregateRoot
+    public class AggregateRoot:Entity
     {
         readonly List<IDomainEvent> _events = new List<IDomainEvent>();
         public int Version { get; set; }

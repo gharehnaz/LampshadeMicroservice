@@ -1,6 +1,8 @@
-﻿namespace InventoryManagement.Framework
+﻿using System.Reflection;
+
+namespace InventoryManagement.Framework
 {
-    public class AggregateRoot
+    public class AggregateRoot:Entity
     {
         readonly List<IDomainEvent> _events = new List<IDomainEvent>();
         public int Version { get; set; }
