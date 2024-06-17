@@ -6,13 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="ArticleCategoryHandler\Commands\" />
-    <Folder Include="ArticleCategoryHandler\Queries\" />
-    <Folder Include="ArticleHandler\Commands\" />
-    <Folder Include="ArticleHandler\Queries\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<PackageReference Include="MediatR" Version="12.2.0" />
 	</ItemGroup>

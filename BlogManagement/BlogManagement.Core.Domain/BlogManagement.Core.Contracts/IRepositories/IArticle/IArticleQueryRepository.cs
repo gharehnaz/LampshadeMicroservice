@@ -7,6 +7,6 @@ namespace BlogManagement.Core.Contracts.IRepositories.IArticle
     {
         Task<GetDetailsArticleResult> Query(GetDetailsArticle getDetailsArticle);
         Task<GetWithCategoryResult> Query(GetWithCategory getWithCategory);
-        Task<List<ArticleSearchModelReult>> Query(ArticleSearchModel searchModel);
+        Task<List<ArticleSearchModelResult>> Query(ArticleSearchModel searchModel);
     }
 }
