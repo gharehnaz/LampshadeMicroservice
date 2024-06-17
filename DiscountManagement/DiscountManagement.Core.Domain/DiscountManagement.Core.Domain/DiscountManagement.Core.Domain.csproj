@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\DiscountManagement.Framework\DiscountManagement.Framework.csproj" />
+  </ItemGroup>
+
 </Project>

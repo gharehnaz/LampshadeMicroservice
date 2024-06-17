@@ -1,6 +1,6 @@
 ﻿namespace BlogManagement.Framework
 {
-    public class Class1
+    public interface IDomainEvent
     {
 
     }

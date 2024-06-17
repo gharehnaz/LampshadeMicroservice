@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\BlogManagement.Framework\BlogManagement.Framework.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement.Framework
 {
-    public class Class1
+    public interface IDomainEvent
     {
 
     }

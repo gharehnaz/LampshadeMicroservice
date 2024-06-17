@@ -1,6 +1,6 @@
 ﻿namespace DiscountManagement.Framework
 {
-    public class Class1
+    public interface IDomainEvent
     {
 
     }
