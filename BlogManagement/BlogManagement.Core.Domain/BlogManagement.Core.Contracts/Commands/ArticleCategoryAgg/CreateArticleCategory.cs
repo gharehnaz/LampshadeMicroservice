@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace BlogManagement.Core.Contracts.Commands.ArticleCategoryAgg
 {
-    internal class CreateArticleCategory
+    public class CreateArticleCategory:IRequest<CreateArticleCategoryResult>
+    {
+    }
+
+    public class CreateArticleCategoryResult
     {
     }
 }
