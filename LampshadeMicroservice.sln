@@ -141,6 +141,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentManagement.Core.Doma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentManagement.Core.Contracts", "CommentManagement\CommentManagement.Core.Domain\CommentManagement.Core.Contracts\CommentManagement.Core.Contracts.csproj", "{85D5C57A-77BD-466C-A67F-1AC9DCB84846}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.Infrastructure.Query", "InventoryManagement\InventoryManagement.Infrastructure\InventoryManagement.Infrastructure.Query\InventoryManagement.Infrastructure.Query.csproj", "{C495EBF4-0147-4913-9881-33B6718722BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{85D5C57A-77BD-466C-A67F-1AC9DCB84846}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85D5C57A-77BD-466C-A67F-1AC9DCB84846}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85D5C57A-77BD-466C-A67F-1AC9DCB84846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C495EBF4-0147-4913-9881-33B6718722BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C495EBF4-0147-4913-9881-33B6718722BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C495EBF4-0147-4913-9881-33B6718722BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C495EBF4-0147-4913-9881-33B6718722BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -371,6 +377,7 @@ Global
 		{149428F7-0E7D-45BE-B6B2-244BACD08492} = {311A95CD-6AB7-472A-96AB-A751FE65CA09}
 		{65AC57E0-EB04-423D-AE37-F7D3A3F8D979} = {8B126016-D929-4203-98F0-41CE0327A186}
 		{85D5C57A-77BD-466C-A67F-1AC9DCB84846} = {8B126016-D929-4203-98F0-41CE0327A186}
+		{C495EBF4-0147-4913-9881-33B6718722BB} = {311A95CD-6AB7-472A-96AB-A751FE65CA09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCCD6632-F61F-4ECF-A95A-56AA7A11852D}
