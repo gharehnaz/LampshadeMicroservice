@@ -1,4 +1,6 @@
-﻿namespace BlogManagement.Core.Contracts.IRepositories.IArticleCategory
+﻿using BlogManagement.Core.Contracts.Queries.ArticleCategoryAgg;
+
+namespace BlogManagement.Core.Contracts.IRepositories.IArticleCategory
 {
     public interface IArticleCategoryQueryRepository
     {

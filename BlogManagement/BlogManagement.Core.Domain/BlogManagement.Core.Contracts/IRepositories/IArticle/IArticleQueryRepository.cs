@@ -1,4 +1,5 @@
-﻿using BlogManagement.Core.Domain.ArticleAgg;
+﻿using BlogManagement.Core.Contracts.Queries.ArticleAgg;
+using BlogManagement.Core.Domain.ArticleAgg;
 
 namespace BlogManagement.Core.Contracts.IRepositories.IArticle
 {

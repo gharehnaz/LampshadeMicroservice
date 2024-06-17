@@ -1,4 +1,6 @@
-﻿namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
+﻿using DiscountManagement.Core.Contracts.Queries.CustomerDiscountAgg;
+
+namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
 {
     public interface ICustomerDiscountQueryRepository
     {
