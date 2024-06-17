@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BlogManagement.Core.Domain.ArticleAgg;
 
 namespace BlogManagement.Core.Contracts.IRepositories.IArticle
 {
-    internal interface IArticleCommandRepository
+    public interface IArticleCommandRepository
     {
+        Task<long> Command(Article order);
+
     }
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
+﻿namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
 {
-    internal interface ICustomerDiscountQueryRepository
+    public interface ICustomerDiscountQueryRepository
     {
+        Task<GetDetailsCustomerDiscountResult> Query(GetDetailsCustomerDiscount getDetailsCustoemrDiscount);
+        Task<List<CustomerDiscountSearchModelResult>> Query(CustomerDiscountSearchModel searchModel);
     }
 }

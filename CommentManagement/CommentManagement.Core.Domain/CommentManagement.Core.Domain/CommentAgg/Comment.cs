@@ -1,6 +1,6 @@
 ﻿using CommentManagement.Framework;
 
-namespace CommentManagement.Core.Domain.Contracts.CommentAgg
+namespace CommentManagement.Core.Domain.CommentAgg
 {
     public class Comment : AggregateRoot
     {

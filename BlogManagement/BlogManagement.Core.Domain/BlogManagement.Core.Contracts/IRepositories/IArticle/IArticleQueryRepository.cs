@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BlogManagement.Core.Domain.ArticleAgg;
 
 namespace BlogManagement.Core.Contracts.IRepositories.IArticle
 {
-    internal interface IArticleQueryRepository
+    public interface IArticleQueryRepository
     {
+        Task<GetDetailsArticleResult> Query(GetDetailsArticle getDetailsArticle);
+        Task<GetWithCategoryResult> Query(GetWithCategory getWithCategory);
+        Task<List<ArticleSearchModelReult>> Query(ArticleSearchModel searchModel);
     }
 }

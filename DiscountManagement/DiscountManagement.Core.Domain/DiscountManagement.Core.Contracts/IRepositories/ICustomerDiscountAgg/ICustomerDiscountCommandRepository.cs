@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DiscountManagement.Core.Domain.CustomerDiscountAgg;
 
 namespace DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg
 {
-    internal interface ICustomerDiscountCommandRepository
+    public interface ICustomerDiscountCommandRepository
     {
+        Task<long> Command(CustomerDiscount colleagueDiscount);
+
     }
 }
