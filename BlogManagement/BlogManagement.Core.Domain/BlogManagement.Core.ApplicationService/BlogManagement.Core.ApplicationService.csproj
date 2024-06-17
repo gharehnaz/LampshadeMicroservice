@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ArticleHandler\" />
+    <Folder Include="ArticleCategoryHandler\" />
+  </ItemGroup>
+
 </Project>

@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructure.Query", "ShopManagement\ShopManagement.Infrastructure\ShopManagement.Infrastructure.Query\ShopManagement.Infrastructure.Query.csproj", "{E313265D-AA0E-454D-B919-98886E6F7660}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountManagemebt", "AccountManagemebt", "{EA0BCCDB-81E5-4751-A676-7545D7C6B5EC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountManagement", "AccountManagement", "{EA0BCCDB-81E5-4751-A676-7545D7C6B5EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogManagement", "BlogManagement", "{F38FA856-1E1C-479F-8CBB-F0445FCE045F}"
 EndProject
