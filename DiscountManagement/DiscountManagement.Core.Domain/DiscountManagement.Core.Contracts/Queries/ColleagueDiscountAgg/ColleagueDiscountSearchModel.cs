@@ -2,7 +2,7 @@
 
 namespace DiscountManagement.Core.Contracts.Queries.ColleagueDiscountAgg
 {
-    public class ColleagueDiscountSearchModel:IRequest<ColleagueDiscountSearchModelResult>
+    public class ColleagueDiscountSearchModel:IRequest<List<ColleagueDiscountSearchModelResult>>
     {
         public long ProductId { get; set; }
 

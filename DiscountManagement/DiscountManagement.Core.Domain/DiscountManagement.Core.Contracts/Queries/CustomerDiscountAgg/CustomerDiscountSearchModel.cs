@@ -2,7 +2,7 @@
 
 namespace DiscountManagement.Core.Contracts.Queries.CustomerDiscountAgg
 {
-    public class CustomerDiscountSearchModel:IRequest<CustomerDiscountSearchModelResult>
+    public class CustomerDiscountSearchModel:IRequest<List<CustomerDiscountSearchModelResult>>
     {
         public long ProductId { get; set; }
         public string StartDate { get; set; }

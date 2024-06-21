@@ -1,7 +1,5 @@
-﻿using DiscountManagement.Core.Contracts.Commands.ColleagueDiscountAgg;
-using DiscountManagement.Core.Contracts.Commands.CustomerDiscountAgg;
+﻿using DiscountManagement.Core.Contracts.Commands.CustomerDiscountAgg;
 using DiscountManagement.Core.Contracts.IRepositories.ICustomerDiscountAgg;
-using DiscountManagement.Core.Domain.ColleagueDiscountAgg;
 using DiscountManagement.Core.Domain.CustomerDiscountAgg;
 using MediatR;
 
