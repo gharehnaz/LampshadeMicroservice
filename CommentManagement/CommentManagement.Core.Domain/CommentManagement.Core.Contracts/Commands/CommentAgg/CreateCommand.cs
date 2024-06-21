@@ -2,7 +2,7 @@
 
 namespace CommentManagement.Core.Contracts.Commands.CommentAgg
 {
-    public class CreateCommand:IRequest<CreateCommandResult>
+    public class CreateComment:IRequest<CreateCommentResult>
     {
         public string Name { get; set; }
         public string Email { get; set; }
@@ -13,7 +13,7 @@ namespace CommentManagement.Core.Contracts.Commands.CommentAgg
         public long ParentId { get; set; }
     }
 
-    public class CreateCommandResult
+    public class CreateCommentResult
     {
         public long Id { get; set; }
     }
