@@ -2,7 +2,7 @@
 
 namespace CommentManagement.Core.Contracts.Queries.CommentAgg
 {
-    public class CommentSearchModel:IRequest<CommentSearchModelResult>
+    public class CommentSearchModel:IRequest<List<CommentSearchModelResult>>
     {
         public string Name { get; set; }
         public string Email { get; set; }
