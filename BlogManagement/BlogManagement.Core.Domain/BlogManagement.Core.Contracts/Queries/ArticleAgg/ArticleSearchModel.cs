@@ -2,7 +2,7 @@
 
 namespace BlogManagement.Core.Contracts.Queries.ArticleAgg
 {
-    public class ArticleSearchModel:IRequest<ArticleSearchModelResult>
+    public class ArticleSearchModel:IRequest<List<ArticleSearchModelResult>>
     {
         public string Title { get; set; }
         public long CategoryId { get; set; }
