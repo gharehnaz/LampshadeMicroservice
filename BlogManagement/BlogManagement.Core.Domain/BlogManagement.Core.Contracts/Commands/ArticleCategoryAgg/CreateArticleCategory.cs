@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BlogManagement.Core.Contracts.Commands.ArticleCategoryAgg
 {
-    public class CreateArticleCategory:IRequest<CreateArticleCategoryResult>
+    public class CreateArticleCategory : IRequest<CreateArticleCategoryResult>
     {
         public string Name { get; set; }
 
@@ -25,7 +25,7 @@ namespace BlogManagement.Core.Contracts.Commands.ArticleCategoryAgg
 
         public string CanonicalAddress { get; set; }
     }
-}
+
 
     public class CreateArticleCategoryResult
     {

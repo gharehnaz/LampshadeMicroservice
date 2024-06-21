@@ -18,7 +18,7 @@ namespace BlogManagement.Core.Contracts.Commands.ArticleAgg
 
         public string PictureTitle { get; set; }
 
-        public string PublishDate { get; set; }
+        public DateTime PublishDate { get; set; }
 
     
         public string Slug { get; set; }
