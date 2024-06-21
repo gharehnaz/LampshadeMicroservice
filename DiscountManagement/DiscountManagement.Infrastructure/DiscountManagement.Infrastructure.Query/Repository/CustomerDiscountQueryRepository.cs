@@ -3,7 +3,7 @@ using DiscountManagement.Core.Contracts.Queries.CustomerDiscountAgg;
 
 namespace DiscountManagement.Infrastructure.Query.Repository
 {
-    public class CustomerDiscountQueryRepsitory : ICustomerDiscountQueryRepository
+    public class CustomerDiscountQueryRepository : ICustomerDiscountQueryRepository
     {
         public Task<GetDetailsCustomerDiscountResult> Query(GetDetailsCustomerDiscount getDetailsCustoemrDiscount)
         {

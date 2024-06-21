@@ -13,4 +13,9 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\DiscountManagement.Core.Domain\DiscountManagement.Core.Contracts\DiscountManagement.Core.Contracts.csproj" />
+	  <ProjectReference Include="..\DiscountManagement.Infrastructure.Commad\DiscountManagement.Infrastructure.Commad.csproj" />
+	  <ProjectReference Include="..\DiscountManagement.Infrastructure.Query\DiscountManagement.Infrastructure.Query.csproj" />
+	</ItemGroup>
 </Project>
