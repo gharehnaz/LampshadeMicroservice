@@ -14,6 +14,7 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\..\InventoryManagement.Core.Domain\InventoryManagement.Core.Contracts\InventoryManagement.Core.Contracts.csproj" />
 	  <ProjectReference Include="..\..\InventoryManagement.Core.Domain\InventoryManagement.Core.Domain\InventoryManagement.Core.Domain.csproj" />
 	</ItemGroup>
 </Project>

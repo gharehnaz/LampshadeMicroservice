@@ -13,4 +13,7 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\BlogManagement.Core.Domain\BlogManagement.Core.Contracts\BlogManagement.Core.Contracts.csproj" />
+	</ItemGroup>
 </Project>

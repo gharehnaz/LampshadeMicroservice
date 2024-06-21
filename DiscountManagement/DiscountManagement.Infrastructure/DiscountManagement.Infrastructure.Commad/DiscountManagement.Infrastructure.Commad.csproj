@@ -14,6 +14,7 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\..\DiscountManagement.Core.Domain\DiscountManagement.Core.Contracts\DiscountManagement.Core.Contracts.csproj" />
 	  <ProjectReference Include="..\..\DiscountManagement.Core.Domain\DiscountManagement.Core.Domain\DiscountManagement.Core.Domain.csproj" />
 	</ItemGroup>
 </Project>
