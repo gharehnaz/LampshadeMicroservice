@@ -1,10 +1,4 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DiscountManagement.Core.Contracts.Commands.CustomerDiscountAgg
 {
@@ -14,9 +8,9 @@ namespace DiscountManagement.Core.Contracts.Commands.CustomerDiscountAgg
 
         public int DiscountRate { get; set; }
 
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
-        public string EndDate { get; set; }
+        public DateTime EndDate { get; set; }
         public string Reason { get; set; }
         public List<ProductViewModel> Products { get; set; }
     }

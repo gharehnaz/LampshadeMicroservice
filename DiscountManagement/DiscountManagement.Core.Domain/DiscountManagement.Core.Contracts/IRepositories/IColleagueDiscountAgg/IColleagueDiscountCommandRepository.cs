@@ -2,7 +2,7 @@
 
 namespace DiscountManagement.Core.Contracts.IRepositories.IColleagueDiscountAgg
 {
-    public interface IColleagueDiscountCommand
+    public interface IColleagueDiscountCommandRepository
     {
         Task<long> Command(ColleagueDiscount colleagueDiscount);
 
