@@ -13,4 +13,8 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\CommentManagement.Infrastructure.Command\CommentManagement.Infrastructure.Command.csproj" />
+	  <ProjectReference Include="..\CommentManagement.Infrastructure.Query\CommentManagement.Infrastructure.Query.csproj" />
+	</ItemGroup>
 </Project>
