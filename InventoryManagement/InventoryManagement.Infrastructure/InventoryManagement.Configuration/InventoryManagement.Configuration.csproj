@@ -13,4 +13,9 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\InventoryManagement.Core.Domain\InventoryManagement.Core.Contracts\InventoryManagement.Core.Contracts.csproj" />
+	  <ProjectReference Include="..\InventoryManagement.Infrastructure.Command\InventoryManagement.Infrastructure.Command.csproj" />
+	  <ProjectReference Include="..\InventoryManagement.Infrastructure.Query\InventoryManagement.Infrastructure.Query.csproj" />
+	</ItemGroup>
 </Project>
