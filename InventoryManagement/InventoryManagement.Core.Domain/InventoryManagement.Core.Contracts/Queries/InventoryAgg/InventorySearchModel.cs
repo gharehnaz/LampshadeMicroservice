@@ -2,7 +2,7 @@
 
 namespace InventoryManagement.Core.Contracts.Queries.InventoryAgg
 {
-    public class InventorySearchModel:IRequest<InventorySearchModelResult>
+    public class InventorySearchModel:IRequest<List<InventorySearchModelResult>>
     {
         public long ProductId { get; set; }
         public bool InStock { get; set; }

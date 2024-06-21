@@ -2,7 +2,7 @@
 
 namespace InventoryManagement.Core.Contracts.Queries.InventoryAgg
 {
-    public class GetOperationLog: IRequest<GetOperationLogResult>
+    public class GetOperationLog: IRequest<List<GetOperationLogResult>>
     {
         public long InventoryId { get; set; }
     }

@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using InventoryManagement.Core.Domain.InventoryAgg;
+using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.Infrastructure.Query
 {
-    internal class InventoryManagementQueryDbContext
+    public class InventoryManagementQueryDbContext:DbContext
     {
+        public DbSet<Inventory> Inventory { get; set; }
+
+        public InventoryManagementQueryDbContext(DbContextOptions<InventoryManagementQueryDbContext> options) :base(options)
+        {
+                
+        }
     }
 }
