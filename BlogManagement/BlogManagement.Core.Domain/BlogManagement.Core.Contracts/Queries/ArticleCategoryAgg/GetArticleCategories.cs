@@ -2,7 +2,7 @@
 
 namespace BlogManagement.Core.Contracts.Queries.ArticleCategoryAgg
 {
-    public class GetArticleCategories:IRequest<GetArticleCategoriesResult>
+    public class GetArticleCategories:IRequest<List<GetArticleCategoriesResult>>
     {
     }
 
